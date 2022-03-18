@@ -10,7 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 
 const persistedStore = persistStore(store);
 
-console.log(process.env.REACT_APP_TEST);
+console.log("env: ", process.env.REACT_APP_TEST);
 
 ReactDOM.render(
   <React.StrictMode>
