@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { Login } from "../pages/Login";
 import { Main } from "../pages/Main";
@@ -7,9 +7,9 @@ import { ProductFile } from "../pages/ProductFile";
 import { Account } from "../pages/Account";
 import { NotFound } from "../pages/Error/404";
 
-export const Router: FC = () => {
+export const AppRoutes: FC = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}>
@@ -19,6 +19,6 @@ export const Router: FC = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
