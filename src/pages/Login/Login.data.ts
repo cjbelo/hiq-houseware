@@ -1,0 +1,55 @@
+import md5 from "md5";
+import NickAvatar from "../../media/nik.jpeg";
+
+export const users = [
+  {
+    username: "admin",
+    password: md5("admin123"),
+    firstName: "Admin",
+    lastName: "Admin",
+    email: "admin.admin@gmail.com",
+    phone: "12345678901",
+    jobTitle: "Administrator",
+    avatar: null,
+  },
+  {
+    username: "nick",
+    password: md5("nick123"),
+    firstName: "Nick",
+    lastName: "Belo",
+    email: "rmnckbelo@gmail.com",
+    phone: "12345678901",
+    jobTitle: "",
+    avatar: NickAvatar,
+  },
+  {
+    username: "cjbelo",
+    password: md5("cjbelo123"),
+    firstName: "CJ",
+    lastName: "Belo",
+    email: "belo.cj@gmail.com",
+    phone: "12345678909",
+    jobTitle: "Software Developer",
+    avatar: null,
+  },
+  {
+    username: "robert",
+    password: md5("robert123"),
+    firstName: "Robert",
+    lastName: "Berin",
+    email: "robert.berin@gmail.com",
+    phone: "09876543212",
+    jobTitle: "Master Data Admin",
+    avatar: null,
+  },
+  {
+    username: "jocampo",
+    password: md5("jocampo123"),
+    firstName: "Jose",
+    lastName: "De Ocampo",
+    email: "jose.de.ocampo@gmail.com",
+    phone: "12345678900",
+    jobTitle: "Business Owner",
+    avatar: null,
+  },
+];
