@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/hiq/static/js/main.8680e57d.js",
+    "static/js/787.f8e563ce.chunk.js": "/hiq/static/js/787.f8e563ce.chunk.js",
+    "static/media/logo.jpeg": "/hiq/static/media/logo.06515d86c936ea281c6c.jpeg",
+    "index.html": "/hiq/index.html",
+    "main.8680e57d.js.map": "/hiq/static/js/main.8680e57d.js.map",
+    "787.f8e563ce.chunk.js.map": "/hiq/static/js/787.f8e563ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8680e57d.js"
+  ]
+}
