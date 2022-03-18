@@ -49,11 +49,13 @@ export const DataGrid: FC<PropTypes> = ({ data, setEdit, editSave }) => {
       <DataGridComp
         rows={data}
         columns={columns}
-        pageSize={pageSize}
-        rowsPerPageOptions={[5, 10, 15]}
+        autoPageSize
+        density="compact"
+        // pageSize={pageSize}
+        // rowsPerPageOptions={[5, 10, 15]}
         checkboxSelection
         disableSelectionOnClick
-        onPageSizeChange={(n) => setPageSize(n)}
+        // onPageSizeChange={(n) => setPageSize(n)}
         onSelectionModelChange={(n) => setEdit(n)}
         onCellEditCommit={editSave}
       />
